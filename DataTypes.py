@@ -100,3 +100,24 @@ for i in range(2):
     my_string2 = "   Hello World!   "
     greet = my_string2.replace("World", username)
     print(greet)
+
+
+# -------------------------------
+# Section 10: String Formatting
+# -------------------------------
+
+# Define variables
+name2 = "Nina"
+userno = 1001
+
+# Old-style string formatting using % operator
+print("\n   Hello, my name is %s" % name2)
+
+# New-style string formatting using str.format()
+print("Hello, my name is {name}".format(name=name2))
+
+# Using str.format() with named placeholders
+print("Hello, my user number is {userno}".format(userno=userno))
+
+# Combining multiple placeholders in str.format()
+print("Get out!! {userno} {name}".format(userno=userno, name=name2))
