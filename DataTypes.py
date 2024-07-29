@@ -182,3 +182,15 @@ print(names2)
 
 names2.pop()  # Remove and return the last item
 print(names2)
+
+
+
+# -------------------------------
+# Section 12: Type Conversion and Operations
+# -------------------------------
+
+# Type conversion and basic operations
+my_num = 3
+print(str(my_num) + " Three")  # Convert integer to string and concatenate
+
+print(int(my_num) + 4)  # Add 4 to the integer value
