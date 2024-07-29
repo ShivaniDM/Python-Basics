@@ -121,3 +121,64 @@ print("Hello, my user number is {userno}".format(userno=userno))
 
 # Combining multiple placeholders in str.format()
 print("Get out!! {userno} {name}".format(userno=userno, name=name2))
+
+
+
+# -------------------------------
+# Section 11: List Operations and Methods
+# -------------------------------
+
+# Empty list examples
+print(list())
+print([])
+print(type(list()))
+print(type([]))
+
+# List string manipulation
+names = ["Nina", "Max", "Jane"]
+names2 = ["You", "Live", "Once"]
+print(len(names))
+
+for i in range(len(names)):
+    print("before change")
+    print(f" {names[i]} index is: {i}")
+    names[i] = names2[i]
+    print("after change:")
+    print(f" {names[i]} index is: {i}")
+
+# Sorting and modifying lists
+lottery_numbers = [1, 4, 32423, 2, 45, 11]
+print(sorted(lottery_numbers, reverse=True))  # Sorted in descending order
+
+names2 = ["You", "Live", "Once"]
+print(sorted(names2, reverse=True))  # Sorted in descending order
+
+lottery_numbers1 = [5, 1, 8, 3]
+lottery_numbers1.sort()  # Sorts the list in place
+print(lottery_numbers1)  # Prints the sorted list
+
+# List modification
+names2.insert(3, "Mike")
+print(names2)
+
+names2.append("doooo")
+print(names2)
+
+lottery_numbers1.extend(lottery_numbers)
+print(lottery_numbers1)
+
+# Membership testing and list methods
+ans = "You" in names2
+print(ans)
+
+ans2 = 3 in lottery_numbers1
+print(ans2)
+
+print(names2.count("Nina"))  # Count occurrences of "Nina"
+
+print(names2.index("Mike"))  # Find index of "Mike"
+names2.remove("Mike")  # Remove the first occurrence of "Mike"
+print(names2)
+
+names2.pop()  # Remove and return the last item
+print(names2)
